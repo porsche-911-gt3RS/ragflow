@@ -13,7 +13,7 @@ const GithubForm = ({ onValuesChange, form, node }: IOperatorForm) => {
       layout={'vertical'}
     >
       <DynamicInputVariable node={node}></DynamicInputVariable>
-      <TopNItem initialValue={5}></TopNItem>
+      <TopNItem initialValue={30} max={1000}></TopNItem>
     </Form>
   );
 };

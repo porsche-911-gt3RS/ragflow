@@ -39,7 +39,7 @@ const RetrievalForm = ({ onValuesChange, form, node }: IOperatorForm) => {
         isTooltipShown
         vectorSimilarityWeightName="keywords_similarity_weight"
       ></SimilaritySlider>
-      <TopNItem></TopNItem>
+      <TopNItem initialValue={30} max={1000}></TopNItem>
       <Rerank></Rerank>
       <TavilyItem name={'tavily_api_key'}></TavilyItem>
       <UseKnowledgeGraphItem filedName={'use_kg'}></UseKnowledgeGraphItem>

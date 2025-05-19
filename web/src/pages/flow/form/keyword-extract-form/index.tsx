@@ -24,7 +24,7 @@ const KeywordExtractForm = ({ onValuesChange, form, node }: IOperatorForm) => {
       >
         <LLMSelect></LLMSelect>
       </Form.Item>
-      <TopNItem initialValue={3}></TopNItem>
+      <TopNItem initialValue={30} max={1000}></TopNItem>
     </Form>
   );
 };

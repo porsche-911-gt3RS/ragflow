@@ -17,7 +17,7 @@ const GoogleForm = ({ onValuesChange, form, node }: IOperatorForm) => {
       layout={'vertical'}
     >
       <DynamicInputVariable node={node}></DynamicInputVariable>
-      <TopNItem initialValue={10}></TopNItem>
+      <TopNItem initialValue={30} max={1000}></TopNItem>
       <Form.Item label={t('apiKey')} name={'api_key'}>
         <Input></Input>
       </Form.Item>

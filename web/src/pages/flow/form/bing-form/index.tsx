@@ -22,7 +22,7 @@ const BingForm = ({ onValuesChange, form, node }: IOperatorForm) => {
       layout={'vertical'}
     >
       <DynamicInputVariable node={node}></DynamicInputVariable>
-      <TopNItem initialValue={10}></TopNItem>
+      <TopNItem initialValue={30} max={1000}></TopNItem>
       <Form.Item label={t('channel')} name={'channel'}>
         <Select options={options}></Select>
       </Form.Item>

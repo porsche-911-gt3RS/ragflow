@@ -25,7 +25,7 @@ const ArXivForm = ({ onValuesChange, form, node }: IOperatorForm) => {
     >
       <DynamicInputVariable node={node}></DynamicInputVariable>
 
-      <TopNItem initialValue={10}></TopNItem>
+      <TopNItem initialValue={30} max={1000}></TopNItem>
       <Form.Item label={t('sortBy')} name={'sort_by'}>
         <Select options={options}></Select>
       </Form.Item>
